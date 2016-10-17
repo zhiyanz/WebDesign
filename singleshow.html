@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300,600|Lora:400,700' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Single Show</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/showstyle.css" />
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+
+<style type="text/css">
+    #tfheader{
+        background-color:red;
+    }
+    #tfnewsearch{
+        float:middle;
+        padding:20px;
+    }
+    .tftextinput{
+        margin: 0;
+        padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;
+        border:1px solid red; border-right:0px;
+        border-top-left-radius: 5px 5px;
+        border-bottom-left-radius: 5px 5px;
+    }
+    .tfbutton {
+        margin: 0;
+        padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border: solid 1px red; border-right:0px;
+        background: #0095cd;
+        background: -webkit-gradient(linear, left top, left bottom, from(red), to(red));
+        background: -moz-linear-gradient(top,  red,  red);
+        border-top-right-radius: 5px 5px;
+        border-bottom-right-radius: 5px 5px;
+    }
+    .tfbutton:hover {
+        text-decoration: none;
+        background: #007ead;
+        background: -webkit-gradient(linear, left top, left bottom, from(red), to(black));
+        background: -moz-linear-gradient(top,  white,  white);
+    }
+    .tfbutton::-moz-focus-inner {
+      border: 0;
+    }
+    .tfclear{
+        clear:both;
+    }
+
+</style>
+</head>
+
+<body>
+<header>
+    <div class="row">
+    	<div id="logo" class="col-sm-4"> 
+        <img src="images/netflix-logo.png" alt="Netflix logo" />
+        </div>    
+        
+
+        <div id="search" class="col-sm-4"> 
+        	<div class="searchbox">
+         		<form id="tfnewsearch" method="get" action="http://www.netflix.com">
+         		<input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+         		</form>
+         	</div>	
+        </div>
+
+        <div id="login" class="col-sm-4"> 
+         	<a href="#" id="loginBtn"><i class="fa fa-user" aria-hidden="true"></i> Welcome, Jeff</a>
+         	<a href="#" id="navBtn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+         
+        </div>   
+
+    </div>
+</header>
+
+<div class="line-separator1"></div>  
+
+<nav class="manue">
+  <ul class="list">
+    <li>
+      <a href="https://www.netflix.com" class="class5">Home</a>
+    </li>
+    <li>
+      <a href="https://www.netflix.com/Login" class="class5">Recently Watched</a>
+    </li>
+    <li>
+      <a href="https://www.netflix.com" class="class5">Playlist</a>
+    </li>
+    <li>
+      <a href="https://www.netflix.com" class="class5">Trending</a>
+    </li>
+    <li>
+      <a href="https://www.netflix.com"class="class5">Collections</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="line-separator2"></div>  
+
+<main>
+
+
+<div id="cardslogo" class="col-xs-12 col-sm-12" > 
+  <img src="images/cards.png" alt="House of Cards" />
+</div>  
+
+
+<style class="slides">
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="autoslides" >
+  <img class="mySlides" src="images/house1.jpg" style="width:100%">
+  <img class="mySlides" src="images/house2.jpg" style="width:100%">
+  <img class="mySlides" src="images/house3.jpg" style="width:100%">
+  <img class="mySlides" src="images/house4.jpg" style="width:100%">
+  <img class="mySlides" src="images/house5.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<div id="hocintro" class= "row">
+  <div id="introduction" class="col-xs-12 col-sm-9">
+    <p>A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama. A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.</p>
+  </div>
+
+  <div id="watchnow" class="col-xs-12 col-sm-3">
+    <div id="watchnow-text">
+    <p><a href="https://www.netflix.com/title/70178217" class="class1">WATCH NOW</a></p>
+    </div>
+  </div>
+
+</div>
+
+<div id="videos" class= "row">
+  <div id="videosign" class="col-sm-3">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class3">Videos</a></p> 
+  </div>
+
+  <div id="sea1" class="col-sm-2">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class6">Season 1</a></p> 
+  </div>
+  <div id="sea2" class="col-sm-2">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class6">Season 2</a></p> 
+  </div>
+  <div id="sea3" class="col-sm-2">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class6">Season 3</a></p> 
+  </div>
+  <div id="more" class="col-sm-2">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class6">More</a></p> 
+  </div>
+</div>    
+
+
+
+<div id="episode" class="row">
+  <div id="episodevideo" class="col-sm-4">
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/NTzycsqxYJ0" frameborder="0" allowfullscreen></iframe>
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class5">Episode 1</a></p> 
+  </div>
+<div id="episodevideo" class="col-sm-4">
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/Bz8BouHnX9I" frameborder="0" allowfullscreen></iframe>
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class5">Episode 2</a></p> 
+  </div>
+
+  <div id="episodevideo" class="col-sm-4">
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/EvGL42rywPM" frameborder="0" allowfullscreen></iframe>
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class5">Episode 3</a></p> 
+  </div>
+</div>
+
+
+<div id="photos" class= "row">
+  <div id="videosign" class="col-sm-3">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class3">Photos</a></p> 
+  </div>
+
+  <div id="sea1" class="col-sm-2">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class6">Season 1</a></p> 
+  </div>
+  <div id="sea2" class="col-sm-2">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class6">Season 2</a></p> 
+  </div>
+  <div id="sea3" class="col-sm-2">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class6">Season 3</a></p> 
+  </div>
+  <div id="more" class="col-sm-2">
+    <p><a href="http://www.amazon.com/gp/product/B00DB0B7CG/ref=atv_feed_catalog?ref_=imdbref_tt_pv_vi_aiv_1&tag=imdbtag_tt_pv_vi_aiv-20" class="class6">More</a></p> 
+  </div>
+</div>    
+
+ <div id="photodisplay" class= "row">
+  <div class="col-sm-4">  
+    <a href="https://www.netflix.com"><img id="photo1" src="images/photo1.jpg" alt="House Photo 1" /></a>
+  </div>  
+
+<div class="col-sm-4">  
+    <a href="https://www.netflix.com"><img id="photo2" src="images/photo2.jpg" alt="House Photo 1" /></a>
+  </div> 
+
+<div class="col-sm-4">  
+    <a href="https://www.netflix.com"><img id="photo3" src="images/photo3.jpg" alt="House Photo 1" /></a>
+  </div> 
+
+</div> 
+
+<div class="row foot1">
+    <div id="footlogo" class="col-xs-12"> 
+      <img src="images/netflix-logo.png" alt="Netflix logo" />
+    </div>
+
+    <ul id="foot1text" class="col-xs-12">
+      <li>
+      <a href="https://www.netflix.com/Login" class="class6">Subscription</a>
+     </li>
+     <li>
+      <a href="https://www.netflix.com/Login" class="class6">Language</a>
+      </li>
+     <li>
+      <a href="https://www.netflix.com" class="class6">Country</a>
+      </li>
+     <li>
+      <a href="https://www.yahoo.com" class="class6">History</a>
+      </li>
+     <li>
+      <a href="https://www.netflix.com"class="class6">Help</a>
+     </li>
+   </ul>
+
+    
+</div>    
+
+
+<div class="row foot2">
+   <ul class="col-xs-12">
+    <li>
+       </li>
+     <li>
+      <a href="https://www.netflix.com/Login" class="class4">Career</a>
+       </li>
+     <li>
+      <a href="https://www.netflix.com" class="class4">Advertise</a>
+       </li>
+     <li>
+      <a href="https://www.yahoo.com" class="class4">Creators</a>
+       </li>
+     <li>
+      <a href="https://www.netflix.com"class="class4">Terms & Policies</a>
+       </li>
+     <li>
+      <a href="https://www.netflix.com"class="class4">Feedback</a>
+    </li>
+  </ul>
+</div>    
+
+
+
+
+</main>	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+<script src="js/main.js"></script>  
+
+</body>
+</html>
+
